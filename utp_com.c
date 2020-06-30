@@ -204,8 +204,8 @@ int main(int argc, char * argv[])
 		}
 
 		// Read data
-		int data_read;
-		int total_read = 0;
+		size_t data_read;
+		size_t total_read = 0;
 
 		while ((data_read = read(file_fd, file_data + total_read, st.st_size - total_read)) > 0)
 		{
